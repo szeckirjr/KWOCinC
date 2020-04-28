@@ -2,7 +2,7 @@
 
 The goal of this project was to code a program that can generate a concordance from a text file, which is an alphabetical list of the principal words used in a text file, listing every instance of each word with its immediate context (line and line number).
 
-# Description of files in this directory.
+# Description of files in this directory
 
 * ```makefile```: Needed to build the assignment. In order to
 construct the ```kwoc3``` executable, enter either ```make``` or
@@ -17,3 +17,7 @@ source-code file as it can be used independently in both
 
 * ```listy.[ch]```: Linked-list routines.
 
+# How to run the program
+
+After using ```make``` to generate the file, use the following:
+```./kwoc3 [INPUT-FILE] (-e) [EXCEPTION-FILE]```
