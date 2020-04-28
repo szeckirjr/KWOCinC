@@ -1,6 +1,6 @@
-# School Projects
+# Keyword Out Of Context in C
 
-A repository to store all of my programming projects while in university for Software Engineering.
+The goal of this project was to code a program that can generate a concordance from a text file, which is an alphabetical list of the principal words used in a text file, listing every instance of each word with its immediate context (line and line number).
 
 # Description of files in this directory.
 
