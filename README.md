@@ -6,20 +6,28 @@ OBS: A version of this program also exists in Python, located in [this repo](htt
 
 # Description of files in this directory
 
-* ```makefile```: Needed to build the assignment. In order to
-construct the ```kwoc3``` executable, enter either ```make``` or
-```make kwoc3```.
+- `makefile`: Needed to build the assignment. In order to
+  construct the `kwoc3` executable, enter either `make` or
+  `make kwoc3`.
 
-* ```kwoc3.c```: The C file containing the ```main()``` function.
+- `kwoc3.c`: The C file containing the `main()` function.
 
-* ```emalloc.[ch]```: Source code and header file for the
-```emalloc``` function. This is kept in its own
-source-code file as it can be used independently in both
-```kwoc3.c``` and ```listy.c```.
+- `emalloc.[ch]`: Source code and header file for the
+  `emalloc` function. This is kept in its own
+  source-code file as it can be used independently in both
+  `kwoc3.c` and `listy.c`.
 
-* ```listy.[ch]```: Linked-list routines.
+- `listy.[ch]`: Linked-list routines.
 
 # How to run the program
 
-After using ```make``` to generate the file, use the following:
-```./kwoc3 [INPUT-FILE] (-e) [EXCEPTION-FILE]```
+Use `make` to generate the executable file
+Then, use the following to run the program: `./kwoc3 [INPUT-FILE] (-e) [EXCEPTION-FILE]`
+The tests are described under the `TESTS.md` file.
+
+If you want to validate the output is correct, you can compare the input file `inXX.txt` with the expected output file `outXX.txt` using `diff` as follows:
+`./kwoc3 [INPUT-FILE] (-e) [EXCEPTION-FILE] | diff - [OUTPUT-FILE]`
+If you get no output, that means the output from the program is the same as the expected output.
+
+Example test command:
+`./kwoc3 Test_Files/in04.txt -e Test_Files/english.txt | diff - Test_Files/out04.txt`
