@@ -23,7 +23,7 @@ OBS: A version of this program also exists in Python, located in [this repo](htt
 
 Use `make` to generate the executable file
 Then, use the following to run the program: `./kwoc3 [INPUT-FILE] (-e) [EXCEPTION-FILE]`
-The tests are described under the `TESTS.md` file.
+The tests are described under the [`TESTS.md`](https://github.com/szeckirjr/KWOCinC/blob/master/TESTS.md) file.
 
 If you want to validate the output is correct, you can compare the input file `inXX.txt` with the expected output file `outXX.txt` using `diff` as follows:
 `./kwoc3 [INPUT-FILE] (-e) [EXCEPTION-FILE] | diff - [OUTPUT-FILE]`
